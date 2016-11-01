@@ -31,6 +31,7 @@ int add_message(struct messages *m, char *message, int b, time_t t) {
 int printmessages(struct messages *m) {
   struct messages *aux = m;
 
+  /* IF STRUCT EMPTY */
   if(aux->next == NULL)
     return 1;
 
